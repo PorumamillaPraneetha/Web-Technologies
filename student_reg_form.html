@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+
+    <style>
+       
+        .top{
+            display: flex;
+            align-items: flex-start;
+            
+        }
+        .student{
+            margin-top: 50px;
+            padding: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="background-color:white; border: 2px solid black; border-width: 3px;">
+    <div class="container">
+        <div class="top">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgm0xw9RnQAGQxrwu2Oo8Ib2_Oxji3gGn9AQ&s" alt="" style="height: 100px; width: 100px; margin-left: 460px;">
+            <h1 style="margin-top: 15px;">Student Registration Form</h1>
+            
+        </div>
+        <p style="margin-left: 560px; margin-top: -40px;">Fill out the form to apply for the training courses. You can consider your application <br> accepted after you recieve a conformation mail</p>
+        <div class="student" style="margin-left: 420px;">
+            <h2 style="margin-top: -30px;">Student Information</h2>
+            <div class="student1">
+                <input type="text" placeholder="First Name" style="height: 30px; width: 200px; border: 2px solid black; border-radius: 5px; font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="text" placeholder="Middle Name" style="height: 30px; width: 200px; border: 2px solid black; border-radius: 5px; margin-left: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="text" placeholder="Last Name" style="height: 30px; width: 200px; border: 2px solid black; border-radius: 5px; margin-left: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="date" placeholder="Date of birth" style="height: 30px; width: 300px; border: 2px solid black; border-radius: 5px; margin-top: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="number" placeholder="StudentID" style="height: 30px; width: 306px; border: 2px solid black; border-radius: 5px; margin-top: 20px; margin-left: 45px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+            </div>
+            <br>
+            <div class="address">
+                <h2>Address</h2>
+                <input type="text" placeholder="Street Address" style="height: 30px; width: 660px; border: 2px solid black; border-radius: 5px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="text" placeholder="City" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="text" placeholder="State/Province" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px; margin-left: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <br>
+                <input type="text" placeholder="Country" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="text" placeholder="ZIP Code" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px; margin-left: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+            </div>
+            <br>
+            <div class="contact">
+                <h2>Contact Infromation</h2>
+                <input type="email" placeholder="E-mail" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 10px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                <input type="number" placeholder="Mobile Number" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px;margin-left: 20px; font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+            </div>
+            <br>
+            <div class="courses" style="font-size: 20px;">
+                <label for="courses">Choose the course: </label>
+                <select name="courses" id="" style="font-size: 20px;">
+                    <option value="choose">Choose</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="ai">AI & ML</option>
+                    <option value="web">Web Development</option>
+                    <option value="cyber">Cyber Security</option>
+                    <option value="eee">EEE</option>
+                    <option value="ece">ECE</option>
+                    <option value="civil">Civil Engineering</option>
+                </select>
+            </div>
+            <br>
+            <div class="marks">
+                <h2>Marks</h2>
+                <label for="10th">10th Marks: 
+                    <input type="text" placeholder="Enter percentage" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                </label>
+                <br>
+                <label for="12th">12th Marks: 
+                    <input type="text" placeholder="Enter percentage" style="height: 30px; width: 315px; border: 2px solid black; border-radius: 5px; margin-top: 20px;font-size: 15px; font-family: 'Times New Roman', Times, serif;">
+                </label>
+            </div>
+            <br>
+            <div class="photo">
+                <label for="photo" style="font-size: 20px;">Upload your passport size photo
+                    <br>
+                    <input type="file" id="file-upload" accept=".pdf,.doc,.docx" style="margin-top: 20px; font-size: 15px;">
+                </label>
+            </div>
+            
+
+        </div>
+    </div>
+
+</body>
+</html>

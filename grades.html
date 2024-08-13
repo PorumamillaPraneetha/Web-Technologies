@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .profile {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .pass {
+            display: inline-block;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .summary p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://tse1.mm.bing.net/th?id=OIP.ZIfSBIwrVMBPpOQXQ4iGqwHaHa&pid=Api&P=0&h=220" alt="College Logo" class="logo">
+        <img src="my_photo.png" alt="Your Image" class="profile">
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>SEMESTER</th>
+                    <th>COURSE CODE</th>
+                    <th>COURSE NAME</th>
+                    <th>CREDIT</th>
+                    <th>GRADE POINT</th>
+                    <th>GRADE</th>
+                    <th>RESULT STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22LG107603</td>
+                    <td>SPOKEN ENGLISH</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22CB102002</td>
+                    <td>Computer Networks</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>O</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22AI101002</td>
+                    <td>Theory of Computation</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>A+</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22IT101001</td>
+                    <td>SOFTWARE ENGINEERING</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>A+</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22DS101007</td>
+                    <td>DATA WAREHOUSING AND MULTIDIMENSIONAL MODELING</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>A+</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22MG101401M</td>
+                    <td>ESSENTIALS OF LEADERSHIP</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>A+</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22ME101704M</td>
+                    <td>MANAGING INNOVATION AND ENTREPRENEURSHIP</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22MM101408M</td>
+                    <td>STATISTICS FOR ENGINEERS</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>O</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+                <tr>
+                    <td>IV-Semester - Batch-I</td>
+                    <td>22CS105001</td>
+                    <td>R PROGRAMMING</td>
+                    <td>2</td>
+                    <td>10</td>
+                    <td>O</td>
+                    <td><span class="pass">Pass</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="summary">
+            <p>Credit Registered : 25</p>
+            <p>Credit Completed : 25</p>
+            <p>SGPA : 9.56</p>
+            <p>CGPA : 9.33</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <style>
+        .container{
+            text-align:left;
+            font-size: 23px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body style="background-color:rgb(255, 255, 255)">
+    <h1 style="text-align: center; margin-top: 40px;">Job Application Form</h1>
+    <fieldset style="width: 45%; margin-top: 40px; border-radius: 15px; border: 3px solid black; ">
+        <div class="container">
+        <form action="login" style="height: 620px; ">
+            <div class="reg">
+                <h2 style="margin-top: 10px; text-align: center;">Basic Details</h2>
+                <label for="first-name">First Name: 
+                    <input type="text" placeholder="" style="margin-top: 10px; width: 300px; border-radius: 5px; height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="last name" >Last Name:
+                    <input type="text" placeholder="" style="margin-top: 10px; width: 300px; border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="E-mail id" >E-mail id:
+                   <input type="email" placeholder="" style="margin-top: 10px;width: 300px; border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="Phone number">Phone number:
+                    <input type="number" placeholder="" style="margin-top: 10px;width: 300px; border-radius: 5px; height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="alternate Phone number">Alternate Phone number:
+                    <input type="number" placeholder="" style="margin-top: 10px;width: 300px; border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="address">Address Lane 1:
+                    <input type="text" style="margin-top: 10px; width: 300px;border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="address">Address Lane 2:
+                    <input type="text" style="margin-top: 10px; width: 300px;border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="pincode">Pincode:
+                    <input type="text" id="pin" name="pin" pattern="\d{6}" maxlength="6" required style="margin-top: 10px; width: 300px;border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="state">State:
+                    <input type="text" style="margin-top: 10px; width: 300px;border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+                <br>
+                <label for="birth">Date Of Birth:
+                    <input type="date" style="margin-top: 10px; width: 300px;border-radius: 5px;height: 15px;">
+                </label>
+                <br>
+            </form>
+        </div>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset style="width: 45%; margin-left: 750px; margin-top: -689px; border-radius: 15px; border: 3px solid black; color: lavenderblush;">
+        <div class="container">
+        <form action="login">
+                <legend>I am currently:</legend>
+                <label for="">
+                    <input type="radio" name="status" value="employed" style="margin-left: 100px;"> Employed
+                </label>
+                <br>
+                <label for="">
+                    <input type="radio" name="status" value="business_owner" style="margin-left: 100px;"> Business Owner
+                </label>
+                <br>
+                <label for="">
+                    <input type="radio" name="status" value="look" style="margin-left: 100px;"> Looking for work
+                </label>
+                <br>
+                <label for="">
+                    <input type="radio" name="status" value="work" style="margin-left: 100px;"> Working independently
+                </label>
+                <br>
+                <label for="">
+                    <input type="radio" name="status" value="student" style="margin-left: 100px;"> A student
+                </label>
+                <br>
+                <br>
+                <label for="company">Company:
+                    <input type="text" placeholder="" style="width: 300px;height: 15px; border-radius: 5px;">
+                </label>
+                <br>
+                <br>
+                <label for="title">Title:
+                    <input type="text" style="width: 300px;height: 15px; border-radius: 5px;">
+                </label>
+                <br>
+                <br>
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" style="width: 300px;height: 15px; border-radius: 5px;">
+                    <option value="">Choose industry...</option>
+                    <option value="tech">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                </select>
+                <br>
+                <br>
+                <label for="education">Education:</label>
+                <select name="education" id="education" style="width: 300px;height: 15px; border-radius: 5px;">
+                    <option value="choose">choose education level...</option>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="diploma">diploma</option>
+                    <option value="under graduate">under graduate</option>
+                    <option value="post graduate">post graduate</option>
+                </select>
+                <br>
+                <br>
+                <label for="position">Position you're applying for:</label>
+                <select name="education" id="position" style="width: 300px;height: 15px; border-radius: 5px;">
+                    <option value="choose">Choose...</option>
+                    <option value="data analyst">Data Analyst</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="AI eng">AI Engineer</option>
+                    <option value="ML eng">ML Engineer</option>
+                    <option value="web">Full Stack Developer</option>
+                    <option value="cloud">Cloud Engineer</option>
+                    <option value="se">Software Engineer</option>
+                </select>
+                <br>
+                <br>
+                <label for="other">If other kindly specify:
+                    <input type="text" style="width: 300px;height: 15px; border-radius: 5px;">
+                </label>
+                <br>
+                <br>
+                <label for="job type">Desired Job types:</label>
+                <select name="job type" id="job type" style="width: 300px;height: 15px; border-radius: 5px;">
+                    <option value="choose">choose...</option>
+                    <option value="full">Full-time</option>
+                    <option value="part">Part-time</option>
+                    <option value="contact">Contract</option>
+                    <option value="temp">Temporary</option>
+                    <option value="Internship">Internship</option>
+                </select>
+                <br>
+                <br>
+                <label for="cv">Upload your CV below
+                    <br>
+                    <br>
+                    <input type="file" id="file-upload" accept=".pdf,.doc,.docx" style="font-size: 25px;margin-left: 100px;">
+                </label>
+            </form>
+        </div>
+    </fieldset>
+    <label for="submit">
+        <input type="submit" style="text-align: center; margin-top: 20px; font-size: 25px; margin-left: 662px; border-radius: 5px; color: white; background-color: black; padding: 10px; cursor: pointer;">
+    </label>
+</body>
+</html>

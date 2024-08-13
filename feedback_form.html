@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7d5cb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #bdb9b9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-fields input[type="text"] {
+            width: calc(50% - 5px);
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2b89d;
+        }
+
+        button {
+            background-color: #004d40;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #003d33;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Feedback Form</h1>
+        <p>Please help us improve our courses by filling out this student feedback form. We highly appreciate your involvement. Thank you!</p>
+        
+        <form>
+            <div class="input-group">
+                <label>Teacher / Instructor</label>
+                <div class="name-fields">
+                    <input type="text" placeholder="First">
+                    <input type="text" placeholder="Last">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>Subject name</label>
+                <input type="text">
+            </div>
+            
+            <div class="input-group">
+                <label>Course number</label>
+                <input type="text">
+            </div>
+            
+            <div class="input-group">
+                <label>Why you chose this course?</label>
+                <div class="radio-group">
+                    <input type="radio" name="reason" value="Degree requirement"> Degree requirement
+                    <input type="radio" name="reason" value="Personal interest"> Personal interest
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>Would you recommend this course to other students?</label>
+                <div class="radio-group">
+                    <input type="radio" name="recommend" value="Yes"> Yes
+                    <input type="radio" name="recommend" value="No"> No
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>Please rate each following statement.</label>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Very Good</th>
+                        <th>Good</th>
+                        <th>Fair</th>
+                        <th>Poor</th>
+                        <th>Very Poor</th>
+                    </tr>
+                    <tr>
+                        <td>Level of effort invested in course</td>
+                        <td><input type="radio" name="effort" value="Very Good"></td>
+                        <td><input type="radio" name="effort" value="Good"></td>
+                        <td><input type="radio" name="effort" value="Fair"></td>
+                        <td><input type="radio" name="effort" value="Poor"></td>
+                        <td><input type="radio" name="effort" value="Very Poor"></td>
+                    </tr>
+                    <tr>
+                        <td>Level of knowledge on start of course</td>
+                        <td><input type="radio" name="knowledge_start" value="Very Good"></td>
+                        <td><input type="radio" name="knowledge_start" value="Good"></td>
+                        <td><input type="radio" name="knowledge_start" value="Fair"></td>
+                        <td><input type="radio" name="knowledge_start" value="Poor"></td>
+                        <td><input type="radio" name="knowledge_start" value="Very Poor"></td>
+                    </tr>
+                    <tr>
+                        <td>Level of knowledge at the end of the course</td>
+                        <td><input type="radio" name="knowledge_end" value="Very Good"></td>
+                        <td><input type="radio" name="knowledge_end" value="Good"></td>
+                        <td><input type="radio" name="knowledge_end" value="Fair"></td>
+                        <td><input type="radio" name="knowledge_end" value="Poor"></td>
+                        <td><input type="radio" name="knowledge_end" value="Very Poor"></td>
+                    </tr>
+                    <tr>
+                        <td>Level of communication</td>
+                        <td><input type="radio" name="communication" value="Very Good"></td>
+                        <td><input type="radio" name="communication" value="Good"></td>
+                        <td><input type="radio" name="communication" value="Fair"></td>
+                        <td><input type="radio" name="communication" value="Poor"></td>
+                        <td><input type="radio" name="communication" value="Very Poor"></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button type="submit">SUBMIT FORM</button>
+        </form>
+    </div>
+</body>
+</html>

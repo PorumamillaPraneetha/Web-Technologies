@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3, p {
+            margin: 0.5em 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .break, .lunch-break {
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SCHOOL OF COMPUTING</h1>
+        <h2>DEPARTMENT OF DATA SCIENCE</h2>
+        <h3>CLASS WORK TIME TABLE (2024-25)<br>V Semester (Batch-1) (DS-2)</h3>
+        <p>Room No.: 704</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>DAY / HR</th>
+                    <th>08:00AM TO 09:00AM</th>
+                    <th>09:00AM TO 10:00AM</th>
+                    <th>BREAK</th>
+                    <th>10:30AM TO 11:30AM</th>
+                    <th>11:30AM TO 12:30PM</th>
+                    <th>LUNCH BREAK</th>
+                    <th>01:45PM TO 02:45PM</th>
+                    <th>02:45PM TO 03:45PM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MON</td>
+                    <td>DM (MOOC)</td>
+                    <td>CC</td>
+                    <td rowspan="5" class="break">BREAK</td>
+                    <td>DAA LAB <br> Room No: 408-A</td>
+                    <td>DAA LAB <br> Room No: 408-A</td>
+                    <td rowspan="5" class="lunch-break">LUNCH BREAK</td>
+                    <td>DAA</td>
+                    <td>ML</td>
+                </tr>
+                <tr>
+                    <td>TUE</td>
+                    <td>CC</td>
+                    <td>WT</td>
+                    <td>WT LAB<br>Room No: 408-A</td>
+                    <td>WT LAB<br>Room No: 408-A</td>
+                    <td>PA (MOOC)</td>
+                    <td>EMSME (MOOC)</td>
+                </tr>
+                <tr>
+                    <td>WED</td>
+                    <td>EMSME (MOOC)</td>
+                    <td>ML</td>
+                    <td>DAA</td>
+                    <td>WT</td>
+                    <td>ML LAB<br>Room No: 2707</td>
+                    <td>LIB</td>
+                </tr>
+                <tr>
+                    <td>THU</td>
+                    <td>PA (MOOC)</td>
+                    <td>WT</td>
+                    <td>CC</td>
+                    <td>ML</td>
+                    <td>DM (MOOC)</td>
+                    <td>EMSME (MOOC)</td>
+                </tr>
+                <tr>
+                    <td>FRI</td>
+                    <td>PA (MOOC)</td>
+                    <td>DAA</td>
+                    <td>DM (MOOC)</td>
+                    <td>EMSME (MOOC)</td>
+                    <td>ML LAB<br>Room No: 2607</td>
+                    <td>ML LAB<br>Room No: 2607</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
